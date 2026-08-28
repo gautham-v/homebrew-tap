@@ -14,7 +14,6 @@ class Msgs < Formula
   homepage "https://github.com/gautham-v/msgs"
   license "MIT"
   version "0.1.0"
-  head "https://github.com/gautham-v/msgs.git", branch: "main"
 
   # The tagged release: a universal binary, so one bottle covers Apple silicon
   # and Intel. Both fields are placeholders until the first tag is pushed.
@@ -25,9 +24,10 @@ class Msgs < Formula
   # nothing else to depend on.
   depends_on macos: :sonoma
 
-  # Only needed to build from source or from HEAD; the release tarball is a
-  # binary and needs neither.
-  on_head do
+  # Building from HEAD needs a Rust toolchain; the release tarball is a binary
+  # and needs nothing.
+  head do
+    url "https://github.com/gautham-v/msgs.git", branch: "main"
     depends_on "rust" => :build
   end
 
