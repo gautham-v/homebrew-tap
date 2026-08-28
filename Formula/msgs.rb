@@ -1,11 +1,10 @@
 # A Homebrew formula stub for msgs.
 #
-# The live copy lives in the tap, github.com/gautham-v/homebrew-tap, as
+# The template for the tap. On each `v*` tag `.github/workflows/release.yml`
+# builds the universal binary, fills `version`, `url`, and `sha256` in below,
+# and pushes the result to github.com/gautham-v/homebrew-tap as
 # `Formula/msgs.rb`; users install with `brew install gautham-v/tap/msgs`.
-# This one is kept in step with it. On each `v*` tag
-# `.github/workflows/release.yml` attaches `msgs-<version>-macos-universal.tar.gz`
-# and its .sha256 to the release; copy the version and checksum into both
-# files.
+# The values here are the last release's and need no hand edits.
 #
 # Installing from source works too:
 #   brew install --HEAD --build-from-source packaging/msgs.rb
@@ -13,12 +12,12 @@ class Msgs < Formula
   desc "Terminal client for iMessage on macOS"
   homepage "https://github.com/gautham-v/msgs"
   license "MIT"
-  version "0.1.1"
+  version "0.1.2"
 
   # The tagged release: a universal binary, so one bottle covers Apple silicon
   # and Intel. Both fields are placeholders until the first tag is pushed.
-  url "https://github.com/gautham-v/msgs/releases/download/v0.1.1/msgs-0.1.1-macos-universal.tar.gz"
-  sha256 "35b83da125a8721c2fffded8d9dd0a5b878bc2d3b0922a8d14d1bf288e26adf0"
+  url "https://github.com/gautham-v/msgs/releases/download/v0.1.2/msgs-0.1.2-macos-universal.tar.gz"
+  sha256 "a5acb5c09a0c63aa506bc6795f3f9d265095920bada56fad00a925075b836254"
 
   # macOS 14+, which is what msgs supports. SQLite is compiled in, so there is
   # nothing else to depend on.
