@@ -12,12 +12,12 @@ class Msgs < Formula
   desc "Terminal client for iMessage on macOS"
   homepage "https://github.com/gautham-v/msgs"
   license "MIT"
-  version "0.3.1"
+  version "0.4.0"
 
   # The tagged release: a universal binary, so one bottle covers Apple silicon
   # and Intel. Both fields are placeholders until the first tag is pushed.
-  url "https://github.com/gautham-v/msgs/releases/download/v0.3.1/msgs-0.3.1-macos-universal.tar.gz"
-  sha256 "c156a0b35329d8855aebe4a26e1b9c7fa449655c777c515cc18fe6636126491f"
+  url "https://github.com/gautham-v/msgs/releases/download/v0.4.0/msgs-0.4.0-macos-universal.tar.gz"
+  sha256 "c5246079631f5d7a949ca33c8e4cbdf994a529ad523ca743cfbdd6157805da81"
 
   # macOS 14+, which is what msgs supports. SQLite is compiled in, so there is
   # nothing else to depend on.
