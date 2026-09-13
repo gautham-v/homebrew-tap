@@ -7,7 +7,7 @@
 # The values here are the last release's and need no hand edits.
 cask "claudebar" do
   version "0.1.0"
-  sha256 ""
+  sha256 "482ad513e2e7195ac268c30fa236b203039124e22775b3f23c208d0dfdb90506"
 
   url "https://github.com/gautham-v/claudebar/releases/download/v#{version}/Claudebar-#{version}.zip"
   name "Claudebar"
