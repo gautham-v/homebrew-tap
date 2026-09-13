@@ -6,8 +6,8 @@
 # users install with `brew install --cask gautham-v/tap/claudebar`.
 # The values here are the last release's and need no hand edits.
 cask "claudebar" do
-  version "0.1.0"
-  sha256 "482ad513e2e7195ac268c30fa236b203039124e22775b3f23c208d0dfdb90506"
+  version "0.1.1"
+  sha256 "a78826e1932320367768387919ae4ea42931988a17cba32ee67961f2f5cbc1ab"
 
   url "https://github.com/gautham-v/claudebar/releases/download/v#{version}/Claudebar-#{version}.zip"
   name "Claudebar"
@@ -19,19 +19,8 @@ cask "claudebar" do
 
   app "Claudebar.app"
 
-  # The build is not notarized, so Gatekeeper refuses the first launch.
   caveats <<~EOS
-    The app is signed ad hoc, not notarized. On first launch macOS will say it
-    cannot verify the developer. Open it anyway with:
-
-      System Settings → Privacy & Security → Open Anyway
-
-    or clear the quarantine flag and launch it:
-
-      xattr -dr com.apple.quarantine /Applications/Claudebar.app
-      open /Applications/Claudebar.app
-
-    Then turn on "Launch at login" from the popover.
+    Turn on "Launch at login" from the popover if you want it.
   EOS
 
   uninstall quit: "com.gauthamv.claudebar"
