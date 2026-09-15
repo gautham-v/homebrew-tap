@@ -6,8 +6,8 @@
 # users install with `brew install --cask gautham-v/tap/claudebar`.
 # The values here are the last release's and need no hand edits.
 cask "claudebar" do
-  version "0.1.1"
-  sha256 "a78826e1932320367768387919ae4ea42931988a17cba32ee67961f2f5cbc1ab"
+  version "0.1.2"
+  sha256 "9c3ff7f27eff07625aff76cbb71bca12da06e07b96b8afe6ac29b1a1cd2b9a1b"
 
   url "https://github.com/gautham-v/claudebar/releases/download/v#{version}/Claudebar-#{version}.zip"
   name "Claudebar"
