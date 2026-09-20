@@ -6,8 +6,8 @@
 # users install with `brew install --cask gautham-v/tap/scorebar`.
 # The values here are the last release's and need no hand edits.
 cask "scorebar" do
-  version "0.1.3"
-  sha256 "bfe64948772397b96a25c2c947c9556fc21a6216a1f82c78af1fe9bd2377af72"
+  version "0.1.4"
+  sha256 "744b2a98e936ff44a314998aca74845e4f652cb87e4bfa82e495781ac9f993a5"
 
   url "https://github.com/gautham-v/scorebar/releases/download/v#{version}/Scorebar-#{version}.zip"
   name "Scorebar"
