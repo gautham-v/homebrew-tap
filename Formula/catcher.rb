@@ -1,8 +1,8 @@
 class Catcher < Formula
   desc "Minimal, local-first markdown notes TUI over plain files"
   homepage "https://github.com/gautham-v/catcher"
-  url "https://github.com/gautham-v/catcher/archive/refs/tags/v0.41.0.tar.gz"
-  sha256 "b16771b11fecec7d92ee25578926cacdba6e631851cfff5f90945824a81fa8e4"
+  url "https://github.com/gautham-v/catcher/archive/refs/tags/v0.41.1.tar.gz"
+  sha256 "14e36659e314260541723626d1defb2f47872730f47b9b39046b470a6c44e8a2"
   license "MIT"
   head "https://github.com/gautham-v/catcher.git", branch: "main"
 
